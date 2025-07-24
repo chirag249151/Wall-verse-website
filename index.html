@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WallVerse</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+  <img src="https://img.icons8.com/color/48/image-gallery.png" alt="WallVerse Logo" />
+  <span>WallVerse</span>
+</div>
+    <p>Discover stunning 4K wallpapers</p>
+     <button id="themeToggle" aria-label="Toggle dark mode">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+        </button>
+  </header>
+
+  <section class="search-container">
+    <input type="text" id="searchBox" placeholder="Search wallpapers..." />
+    <button id="searchBtn">Search</button>
+  </section>
+
+  <nav class="categories">
+    <a href="#" class="category-link active" data-category="nature">Nature</a>
+    <a href="#" class="category-link" data-category="minimal">Minimal</a>
+  </nav>
+
+  <main>
+    <div id="wallpaperGrid"></div>
+    <button id="loadMore">Load More</button>
+  </main>
+
+  <div id="lightbox">
+    <span class="close-btn">&times;</span>
+    <img id="modal-image" src="" alt="Full wallpaper" />
+    <div>
+      <button id="view-full">👁 View Full</button>
+      <button id="download-full">⬇️ Download</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 WallVerse | All rights reserved</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
